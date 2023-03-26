@@ -10,7 +10,7 @@
                         <key>kind</key>
                         <string>software-package</string>
                         <key>url</key>
-                        <string>http://yy.77xym.com/temp/测试.ipa</string>
+                        <string>https://pan.tyh11.cn/d/%E7%AE%A1%E7%90%86%E6%96%87%E4%BB%B6/%E6%9C%AC%E5%9C%B0%E5%AD%98%E5%82%A8/default/33.ipa</string>
                     </dict>
                     <dict>
                         <key>kind</key>
@@ -24,7 +24,7 @@
                 <key>metadata</key>
                 <dict>
                     <key>bundle-identifier</key>
-                    <string>cn.v-team.9c9a60c004ab84a96b0820a8e611e278</string>
+                    <string>com.tencent.wx</string>
                     <key>bundle-version</key>
                     <string>1.0.0</string>
                     <key>kind</key>
