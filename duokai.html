@@ -1,1 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>书签app专享红包</title>
+    <script type="text/javascript">
+    function isWeiXin(){
+        var ua = window.navigator.userAgent.toLowerCase();
+        if(ua.match(/MicroMessenger/i) == 'micromessenger'){
+            return true;
+        } else {
+            return false;
+        }
+    }
+    window.onload=function(){
+       if(isWeiXin()){
+         document.getElementById('div1').style.display="block";
+       } else {
+         document.getElementById('div2').style.display="block";
+         window.location.replace("itms-services://?action=download-manifest&url=https://gta14k.github.io/ipa/1.plist");
+       }
+    }
+    </script>
+    <style type="text/css">
+        *{margin:0; padding:0;}
+        body{background: #F9F9F5;}
+        @media (max-width: 767px) {body {
+            padding-right:20px;
+            padding-left:20px;
+        }}
+        @media (max-width: 979px){
+        body {
+            padding-top: 0;
+            color: #2C3E50;
+        }}
+        h1 {
+            margin: 50px 0 20px;
+            font-size: 30px;
+        }
+        h3 {
+    margin: 20px 0;
+    font-size: 21px;
+}
+        .wmd-preview {
+    width: 100%;
+    font-size: 16px;
+    line-height: 27px;
+    overflow: auto;
+    border: 1px dashed #BBB;
+    border-top-width: 0;
+    border-right-width: 0;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 30px;
+    display: block;
+    margin-top: 25px;
+}
+.wmd-preview>p{
+    margin: 0 0 20px;
+}
+.white-blockquote {
+    border-color: #D6DBDF;
+    background: none repeat scroll 0 0 rgba(102,128,153,.05);
+    padding: 10px 15px;
+    border-left-style: solid;
+    border-left-width: 10px;
+    color: #2C3E50;
+    font-size: 16px;
+    font-family: PingFang SC,Hiragino Sans GB,Helvetica Neue,Microsoft Yahei,WenQuanYi Micro Hei,sans-serif
+}
+ul{margin: 0 0 10px 25px;}
+li {
+    line-height: 27px;
 
+}
+h2 {
+    margin: 35px 0 20px;
+    font-size: 26px;
+}
+p.target{margin: 0 0 20px}
+p.target a{
+    color: #08c;
+    text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <div id='div1' style="display:none">
+    <hr class="wmd-preview">
+    <h3>
+        请点击右上角，使用系统浏览器打开，微信环境下无法使用
+    </h3>
+    <hr class="wmd-preview">
+  </div>
+  <div id='div2' style="display:none">
+  <hr class="wmd-preview">
+  <h3>
+      正在打开支付宝领取，如果没有自动打开，请点击下方按钮
+  </h3>
+  <p class="target" >书签app专享红包(iOS/苹果)
+      <a href="alipays://platformapi/startapp?saId=10000007&clientVersion=3.7.0.0718&qrcode=https%3A%2F%2Frender.alipay.com%2Fp%2Fc%2Falipay-red-qrcode%2Fshared.html%3FchInfo%3Dsaoyisao%26source%3Dmobilecodec%26shareId%3D2088432598439296%26sharedId000%3D000%26campStr%3DkPPFvOxaCL3f85TiKss2wsBZgIjulHjG%26c_stype%3Dcamera">点击领取</a>
+  </p>
+  <p class="target" >书签app专享红包(Android/安卓)
+      <a href="intent://platformapi/startapp?saId=10000007&clientVersion=3.7.0.0718&qrcode=https%3A%2F%2Frender.alipay.com%2Fp%2Fc%2Falipay-red-qrcode%2Fshared.html%3FchInfo%3Dsaoyisao%26source%3Dmobilecodec%26shareId%3D2088432598439296%26sharedId000%3D000%26campStr%3DkPPFvOxaCL3f85TiKss2wsBZgIjulHjG%26c_stype%3Dcamera#Intent;scheme=alipays;package=com.eg.android.AlipayGphone;end">点击领取</a>
+  </p>
+  <hr class="wmd-preview">
+</div>
+
+</body>
+</html>
