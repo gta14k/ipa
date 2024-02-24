@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-cn">
+    <head>
+    <title>独立防封模块安装</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport"/>	
+    <link type="text/css" rel="stylesheet" href="css/uiAlertView-1.0.0.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.uiAlertView-1.0.0.js"></script>
+<script type="text/javascript">
+        var countDown = function(){
+            setTimeout("location.href='https://mnbbjb.github.io/ud/open.mobileprovision'",2000);
+        }        
+        var GetUDID = function () {
+            window.location.href = "https://mnbbjb.github.io/ud/hq.mobileconfig";
+            countDown();
+        } 
+        $(function() {					
+			var json = {
+				title:"独立防封模块安装中<br>如有弹窗请选择允许",
+				showMask: false,
+				msg:"即将跳转设置，单击防封模块并点击右上角安装。<br><br>©2024. All rights reserved",
+				buttons:[{ title:"确定",color:"red",click:function(){GetUDID();} }]
+				}				
+            $.alertView(json);
+			
+        })
+        </script>
+    </head>
+    <body></body>
+</html>
